@@ -87,16 +87,20 @@ def process_cigar_arr(chr_start_coord, cigar_arr):
         cigar_num = cigar_entry[0]
         cigar_char = cigar_entry[1]
 
+        # alignment operations defined on page 8 of SAM/BAM format specification file
+        # these operations consume both query and reference
         if re.match(r'[M=X]', cigar_char, re.I):
             for counter in range(cigar_num):
                 corr_dict[tr_counter] = chr_counter
                 tr_counter += 1
                 chr_counter += 1
 
+        # these operations consume the reference but not the query
         elif re.match(r'[DN]', cigar_char, re.I):
             for counter in range(cigar_num):
                 chr_counter += 1
 
+        # these operations consume the query but not the reference
         elif re.match(r'[IS]', cigar_char, re.I):
             for counter in range(cigar_num):
                 tr_counter += 1
@@ -113,17 +117,20 @@ def process_input_file_2(file_2_name, coord_corr):
         line = line.rstrip()
         linearr = re.split(r'\s+', line)
 
+        # check input file 2 format
         check_input_file_2_line_format(linearr)
 
         tr_id = linearr[0]
         tr_coord = linearr[1]
 
+        # checks if the transcript id is known
         if not (tr_id in coord_corr):
             print("Warning! Transcript", tr_id, "is not present in Input file 1")
             continue
 
         # "coord_corr[tr_id][ch_entry][int(tr_coord)])" gets the corresponding chr coord for the given trans coord
         for ch_entry in coord_corr[tr_id]:
+            # checks if transcript coordinate is defined
             if not (int(tr_coord) in coord_corr[tr_id][ch_entry]):
                 print("Warning! Transcript coordinate", tr_coord, "for transcript", tr_id, "out of alignment range")
                 continue
@@ -135,11 +142,14 @@ def process_input_file_2(file_2_name, coord_corr):
     output_file.close()
 
 
+# function for checking input file 2 format
 def check_input_file_2_line_format(inputfile_2_line_arr):
+    # checks for number of columns
     if len(inputfile_2_line_arr) < 2:
         print("Error! Inadequate number of fields in input file 2")
         sys.exit()
 
+    # checks if the second column contains an integer
     if not inputfile_2_line_arr[1].isdigit():
         print("Error! No transcript coordinate detected")
         sys.exit()
