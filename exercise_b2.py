@@ -51,6 +51,9 @@ def process_cigar_string(cigarstring):
         if not cigar_char.isalpha():
             cigar_num = cigar_num + cigar_char
         else:
+            if cigar_num == '':
+                print("Error! Wrong CIGAR string format")
+                sys.exit()
             cigar_num = int(cigar_num)
             cigararr.append([cigar_num, cigar_char])
             cigar_num = ''
