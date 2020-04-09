@@ -28,6 +28,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -47,14 +48,18 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="392" y="88" key="#Notifications/0.0.1600.860/1600.0.1360.728@0.0.1600.860" timestamp="1586415762625" />
-    <state x="530" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586414168417">
+    <state x="530" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586416108941">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="530" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860/1600.0.1360.728@0.0.1600.860" timestamp="1586414168417" />
+    <state x="530" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860/1600.0.1360.728@0.0.1600.860" timestamp="1586416108941" />
     <state x="558" y="301" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1586071373940">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="558" y="301" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1600.860/1600.0.1360.728@0.0.1600.860" timestamp="1586071373940" />
+    <state x="301" y="72" key="SettingsEditor" timestamp="1586416024357">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="301" y="72" key="SettingsEditor/0.0.1600.860/1600.0.1360.728@0.0.1600.860" timestamp="1586416024357" />
     <state x="496" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1586414116072">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
