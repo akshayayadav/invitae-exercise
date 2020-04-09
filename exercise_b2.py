@@ -10,6 +10,8 @@ def get_alignment_dict(file_1_name):
     for line in file_1:
         line = line.rstrip()
         linearr = re.split(r'\s+', line)
+
+        # check input file 1 format
         check_input_file_1_line_format(linearr)
 
         trans_id = linearr[0]
@@ -29,10 +31,12 @@ def get_alignment_dict(file_1_name):
 # checks if the current line in the input file 1 has at least 4 fields and the third field contains a integer
 # also checks if the cigar string contains valid characters
 def check_input_file_1_line_format(inputfile_1_line_arr):
+    # checks for number of columns
     if len(inputfile_1_line_arr) < 4:
         print("Error! Inadequate number of fields in input file 1")
         sys.exit()
 
+    # checks if the third column contains an integer
     if not inputfile_1_line_arr[2].isdigit():
         print("Error! No reference coordinate detected")
         sys.exit()
