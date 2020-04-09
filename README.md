@@ -36,5 +36,29 @@ given transcript coordinate does not have a corresponding chr coordinate (due to
 coordinate is out of the alignment range) an appropriate warning is thrown.
 
 #### Bells and Whistles
-   
-  
+* The program can be easily modified to accommodate transcripts that map to genomic 3' to 5'.
+The `process_cigar_arr` function that calculates coordinate correspondences between the
+chromosome and the transcript can be modified to run backwards on the chromosome to accommodate
+the map genomic 3' to 5'.
+
+* To map genomic coordinate onto transcript coordinates, the dictionary that is returned by 
+the function `process_cigar_arr` (which has key as the transcript coordinate and the value as
+the genomic coordinate) can be easily modified so that the key is the genomic coordinate and 
+the value is transcript coordinate.
+
+* The transcript range can be mapped on to the genomic range by sorting the coordinate 
+correspondence dictionary (returned from `process_cigar_arr` function) by keys and obtaining 
+the genomic coordinates that correspond to the smallest and the largest transcript coordinates.
+A transcript CIGAR can be converted into a genomic CIGAR interchanging the INSERTION and 
+DELETION operations. For example, the genomic CIGAR for the transcript CIGAR 8M7D6M2I2M11D7M is 
+8M7I6M2D2M11I7M.
+
+* Transcript data from from external sources can be obtained from RNAseq experiments designed to
+solve specific biological questions. The FASTQ files containing reads from RNAseq experiments 
+can be downloaded from databases like NCBI-SRA or EBI-arrayexpress. These reads can be assembled
+into transcripts using tools like Oases and Trinity which then can be aligned to appropriate
+reference genomes to obtain the SAM files containing alignment coordinates and the CIGAR strings.
+In order to handle long CIGAR strings containing millions of alignment operations for a very 
+large number of alignments using an external database like MySQL to store and retrieve 
+coordinate correspondences between transcripts and chromosomes.
+ 
