@@ -48,7 +48,7 @@ def process_cigar_string(cigarstring):
     cigararr = list()
     cigar_num = ''
     for cigar_char in cigarstring:
-        if not cigar_char.isalpha():
+        if not (cigar_char.isalpha() or cigar_char == '='):
             cigar_num = cigar_num + cigar_char
         else:
             if cigar_num == '':
