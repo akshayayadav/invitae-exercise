@@ -17,7 +17,7 @@ python exercise_b2.py Input_file_1.txt Input_file_2.txt
 
 * The transcript is always mapped from genomic 5’ to 3’.
 
-* Since the Input file 2 only provides transcript ids, it is assumed that one transcript aligns 
+* Since Input file 2 only provides transcript ids, it is assumed that one transcript aligns 
 to a unique location on at most one chromosome. In other words, a transcript cannot align to 2 different 
 chromosomes or to 2 different locations on a single chromosome.
 
