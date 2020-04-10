@@ -56,10 +56,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="549" y="266" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1600.860/1600.0.1360.728@0.0.1600.860" timestamp="1586487477666" />
-    <state x="530" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586491010686">
+    <state x="530" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586533551387">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="530" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860/1600.0.1360.728@0.0.1600.860" timestamp="1586491010686" />
+    <state x="530" y="177" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.860/1600.0.1360.728@0.0.1600.860" timestamp="1586533551387" />
     <state x="558" y="301" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1586071373940">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -68,9 +68,9 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="301" y="72" key="SettingsEditor/0.0.1600.860/1600.0.1360.728@0.0.1600.860" timestamp="1586419211771" />
-    <state x="496" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1586487295210">
+    <state x="496" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1586532730061">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="496" y="254" key="com.intellij.ide.util.TipDialog/0.0.1600.860/1600.0.1360.728@0.0.1600.860" timestamp="1586487295210" />
+    <state x="496" y="254" key="com.intellij.ide.util.TipDialog/0.0.1600.860/1600.0.1360.728@0.0.1600.860" timestamp="1586532730061" />
   </component>
 </project>
