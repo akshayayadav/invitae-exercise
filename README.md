@@ -40,14 +40,14 @@ coordinate is out of the alignment range) an appropriate warning is thrown.
 
 #### Strengths and Weaknesses
 * Strength: The program is designed to check for formatting errors in the input files like missing columns 
-and blank lines
+and blank lines.
 
 * Strength: The program also inspects the CIGAR strings for formatting errors and presence of unknown 
-characters
+characters.
 
 * Strength: Calculates all the coordinate mappings between the transcripts and chromosomes along the entire
 length of the alignment, and stores it in the memory. This enables quick look up and mapping of any transcript
-coordinates on the genomic coordinates without the need for repeatedly processing CIGAR strings
+coordinates on the genomic coordinates without the need for repeatedly processing CIGAR strings.
 
 * Weakness: Calculating and storing the coordinate mappings for entire alignments could create memory 
 problems while processing large input files.
